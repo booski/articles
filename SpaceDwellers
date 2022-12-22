@@ -4,14 +4,15 @@ both in terms of gameplay and player choice but also in terms of what
 type of game unfolds.
 
 It should be possible to play the game as an unmanned probe, a single
-adventurer, a small crew of shipmates, or an entire civilization, or any
-size in between. No framerate guarantees ;)
+adventurer, a small crew of shipmates, or (in principle at least) an
+entire civilization, or any size in between. No framerate guarantees ;)
 
-Specific thoughts:  
+Specific thoughts:
+
  * Each encounter (anything from scanning space debris to landing on a
-planet) causes the world generator to fill in more of the world. History
-is generated as needed and integrated with previously generated lore
-(your sources may not be honest or impartial though).
+   planet) causes the world generator to fill in more of the world.
+   History is generated as needed and integrated with previously
+   generated lore (your sources may not be honest or impartial though).
 
  * Ships should be buildable in 3d, with the option of having more than
    one level.
