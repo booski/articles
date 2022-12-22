@@ -1,0 +1,31 @@
+Working on a concept for a game. A cross between RimWorld and Dwarf
+Fortress (among other games), it should be a very open game experience
+both in terms of gameplay and player choice but also in terms of what
+type of game unfolds.
+
+It should be possible to play the game as an unmanned probe, a single
+adventurer, a small crew of shipmates, or an entire civilization, or any
+size in between. No framerate guarantees ;)
+
+Specific thoughts:  
+ * Each encounter (anything from scanning space debris to landing on a
+planet) causes the world generator to fill in more of the world. History
+is generated as needed and integrated with previously generated lore
+(your sources may not be honest or impartial though).
+
+ * Ships should be buildable in 3d, with the option of having more than
+   one level.
+
+ * Gravity should be orientable whichever way by use of some item.
+   Rotational gravity should also be possible.
+
+ * It should be possible to create subsidiary craft using the exact same
+   rules as the main ship, only limited in (initial) size by the
+   construction facilities.
+
+ * The ship generator will be absolutely key to the setting - most events
+   will be emergent from the interactions between different ships and
+   their properties.
+
+ * Power distribution will probably be an important mechanic. Consider
+   possible grid management options.
