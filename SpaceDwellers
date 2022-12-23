@@ -30,3 +30,54 @@ Specific thoughts:
 
  * Power distribution will probably be an important mechanic. Consider
    possible grid management options.
+
+Some ship generation BNF:
+
+      # Definitions
+      Ship := Module+
+
+      Module := Propulsion
+                Communications
+                Power plant
+                Life support
+                Food
+                Sleep
+                AI core
+                Weapons
+                Control chair
+
+
+      # Relations ( Provider -> Provides; Dependent <- Needs )
+      Propulsion <- Power plant
+                 <- Controls
+
+      Communications <- Power plant
+
+      Life support <- Power plant
+
+      Food <- Life suport
+
+      Sleep <- Life support
+
+      AI core -> Controls
+              <- Power plant
+
+      Weapons <- Controls
+
+      Control chair -> Controls
+                    <- Life support
+
+
+      # Example ship types
+      One-shot probe := Power plant, Communications
+
+      Unmanned scout := Power plant x3, Propulsion, Communications, AI core
+
+      Fighter := Power plant x6, Propulsion x5, Weapons x2,
+                 Control chair, Life support
+
+      Unarmed singleship := Power plant x3, Propulsion, Control chair,
+                            Communications, Life support, Sleep, Food
+
+      Cryogenic passenger liner := Power plant x503, Propulsion, Communications,
+                                   AI core, Life support x 500, Sleep x 2000
