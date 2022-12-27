@@ -51,33 +51,40 @@ Some ship generation BNF:
       Propulsion <- Power plant
                  <- Controls
 
-      Communications <- Power plant
+      Communications <- Power
 
-      Life support <- Power plant
+      Power plant -> Power
 
-      Food <- Life suport
+      Air supply <- Power
 
-      Sleep <- Life support
+      Life support <- Air supply
+
+      Food <- Kitchen inside Life suport
+           <- Power
+
+      Sleep <- Bed inside Life support
 
       AI core -> Controls
-              <- Power plant
+              <- Power
 
       Weapons <- Controls
 
       Control chair -> Controls
-                    <- Life support
+                    <- Air supply
 
+      Cryocasket <- Bed
+                 <- Power x2
 
       # Example ship types
       One-shot probe := Power plant, Communications
 
       Unmanned scout := Power plant x3, Propulsion, Communications, AI core
 
-      Fighter := Power plant x6, Propulsion x5, Weapons x2,
-                 Control chair, Life support
+      Fighter := Power plant x7, Propulsion x3, Weapons x2,
+                 Control chair, Air supply
 
-      Unarmed singleship := Power plant x3, Propulsion, Control chair,
-                            Communications, Life support, Sleep, Food
+      Unarmed singleship := Power plant x5, Propulsion x2, Control chair, Air supply,
+                            Communications, Life support x3, Sleep, Food
 
-      Cryogenic passenger liner := Power plant x503, Propulsion, Communications,
-                                   AI core, Life support x 500, Sleep x 2000
+      Cryogenic passenger liner := Power plant x210, Propulsion x16, Communications,
+                                   AI core, Cryocasket x96 (Life support, Sleep, Power x2)
