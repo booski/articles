@@ -7,6 +7,46 @@ It should be possible to play the game as an unmanned probe, a single
 adventurer, a small crew of shipmates, or (in principle at least) an
 entire civilization, or any size in between. No framerate guarantees ;)
 
+
+Some scenarios to enable (but not hardcode):
+
+ * Run your own (Culture) GSV: a metropolis-sized ship colony that is
+   fully self-sufficient but roams space for the social interactions.
+   The ship is truly enormous, its occupied space measured in cubic
+   kilometres. It is enclosed in a force envelope much larger than the
+   physical hull, making the environment around the ship's hull habitable.
+   The outside of the ship features naturalesque parkland lit by
+   artificial sunlight. The ship is run by autonomous AI and has millions
+   of inhabitants in addition to hosting many smaller ships.
+
+ * Rogue trader: Run a small smuggling operation with a handful of crew
+   on a ship that just barely holds together, financing the last repair
+   with an advance on the returns from your next haul. If you find
+   yourself in real trouble you can always hide out in cryosleep in deep
+   space for a few decades or so until all is forgotten.
+
+ * The wayward colony ship: Some hundreds of colonists are stranded on
+   their colony ship after discovering that their target planet is
+   unsuitable. This was a foreseen (but unpopular) contingency, so even
+   though everyone is irretrievably awake from cryosleep the ship can keep
+   them alive for now. Now they must either modify their ship for more
+   sustainable habitation or find a different colonization target.
+
+ * I'll start my own society! With hookers! And blackjack!: A small
+   group breaks with their very highly advanced civilization due to some
+   ideological schism. Settling on a small, barren moon, they intend to
+   use FTL probes and remote mining equipment to gather and process the
+   supplies they will need to terraform their new home and set up all the
+   other necessities of life.
+
+ * You will be assimilated: You are a von Neuman probe, but instead of
+   making copies of yourself you make paperclips. The paperclips require
+   quality control, and you have decided that opposable thumbs are critical
+   to good paperclip QC. Thus you travel the galaxy, collecting paperclip-
+   suitable ores and organisms with opposable thumbs, leaving a cosmic
+   trail of exquisite paperclips in your wake.
+
+
 Specific thoughts:
 
  * Each encounter (anything from scanning space debris to landing on a
@@ -20,16 +60,33 @@ Specific thoughts:
  * Gravity should be orientable whichever way by use of some item.
    Rotational gravity should also be possible.
 
+ * Gravity generators might create interesting options for subsidiary
+   fliers using anti-gravity to regulate their height.
+
  * It should be possible to create subsidiary craft using the exact same
    rules as the main ship, only limited in (initial) size by the
    construction facilities.
 
- * The ship generator will be absolutely key to the setting - most events
-   will be emergent from the interactions between different ships and
-   their properties.
+ * The ship generator will be absolutely key to the setting - events will
+   be emergent from the interactions between actors in the world.
 
  * Power distribution will probably be an important mechanic. Consider
    possible grid management options.
+
+ * It should be possible to scale components for predictable effects -
+   research the ability to build smaller items that require less input
+   but produce the same output. Similarly you could research bigger
+   sizes that produce more for the same input.
+
+
+Some resource behaviours:
+
+ * Fuel - a resource is consumed in a process
+
+ * Product - a resource is produced by a process
+
+ * Status - a resource exists at this level
+
 
 Some ship generation BNF:
 
